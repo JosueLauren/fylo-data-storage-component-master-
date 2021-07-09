@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
+<body style="background-color: silver">
+  <main class="principal">
+    <section class="logo-icones">
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="icones">
+        <img src="images/icon-document.svg" alt="icon-document">
+        <img src="images/icon-folder.svg" alt="icon-folder">
+        <img src="images/icon-upload.svg" alt="icon-upload">
+      </div>
+    </section>
+    <section class="barra-carregamento">
+      <span class="valor-carregamento">185 GB Left</span>
+      <p class="descrição-carregamento">You’ve used <b>815 GB</b>of your storage</p>
+      <div class="barra-externa">
+        <div class="barra-interna">
+          <span class="bolinha"></span>
+        </div>
+      </div>
+      <div class="zero-mil">
+        <span class="zero">0 GB</span>
+        <span class="mil">1000 GB</span>
+      </div>
+    </section>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
