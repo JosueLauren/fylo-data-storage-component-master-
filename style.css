@@ -141,3 +141,43 @@ div.zero-mil {
  .attribution a { 
      color: hsl(228, 45%, 44%); 
 }
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: url(images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    main.principal {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    section.logo-icones {
+        margin: 20px auto;
+        width: 60%;
+
+    }
+
+    section.barra-carregamento {
+        width: 60%;
+        height: 150px;
+        margin: auto;
+        
+    }
+
+    span.valor-carregamento {
+        top: 110px;
+        right: 70px;
+        border-radius: 10px;
+    }
+
+    span.valor-carregamento::after {
+        content: "";
+        display: none;
+    }
+}
